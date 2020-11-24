@@ -18,6 +18,10 @@ class _ListScreenState extends State<ListScreen> {
           if (snapshot.hasData) {
             List<Ars> currencies = snapshot.data;
             return Scaffold(
+              appBar: AppBar(
+                title: Text('Escolha a moeda: '),
+                centerTitle: true,
+              ),
               body: ListView.builder(
                 itemCount: currencies.length,
                 itemBuilder: (context, index) {

@@ -40,6 +40,10 @@ class _ConvertScreenState extends State<ConvertScreen> {
   Widget build(BuildContext context) {
     moeda = widget.moeda.buy;
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Moedas:'),
+        centerTitle: true,
+      ),
       body: Center(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
